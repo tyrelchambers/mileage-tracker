@@ -3,7 +3,7 @@ import "./Headings.css";
 
 export const H1 = (props) => (
   <h1
-    className={`heading text-4xl font-black text-white  ${
+    className={`heading text-4xl font-black text-gray-800  ${
       props.className ? props.className : ""
     }`}
     style={props.style}
@@ -13,7 +13,7 @@ export const H1 = (props) => (
 );
 export const H2 = (props) => (
   <h2
-    className={`heading text-2xl font-bold text-white  ${
+    className={`heading text-2xl font-bold text-gray-800  ${
       props.className ? props.className : ""
     }`}
     style={props.style}
@@ -23,7 +23,7 @@ export const H2 = (props) => (
 );
 export const H3 = (props) => (
   <h3
-    className={`heading text-lg font-bold flex items-center text-white ${
+    className={`heading text-lg font-bold flex items-center text-gray-800 ${
       props.className ? props.className : ""
     }`}
     style={props.style}

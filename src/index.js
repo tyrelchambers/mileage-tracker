@@ -35,7 +35,8 @@ const AuthRoutes = () =>
   ));
 
 const App = () => {
-  const token = window.localStorage.getItem("token") || "";
+  const token = true;
+  // const token = window.localStorage.getItem("token") || "";
 
   if (!token) {
     <Redirect to="/signup" />;
