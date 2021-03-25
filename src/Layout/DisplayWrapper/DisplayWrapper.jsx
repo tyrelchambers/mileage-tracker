@@ -3,10 +3,12 @@ import Header from "../Header/Header";
 
 const DisplayWrapper = (props) => {
   return (
-    <div classNam="">
+    <div>
       <Header title={props.title} />
 
-      <div className="max-w-screen-lg">{props.children}</div>
+      <div className="max-w-screen-lg flex flex-col m-auto w-full">
+        {props.children}
+      </div>
     </div>
   );
 };
