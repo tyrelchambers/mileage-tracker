@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { SecBtn } from "../../components/Buttons/Buttons";
 import Trip from "../../components/Trip/Trip";
 import DisplayWrapper from "../../Layout/DisplayWrapper/DisplayWrapper";
 import Section from "../../Layout/Section/Section";
@@ -23,16 +24,11 @@ const Home = () => {
   return (
     <DisplayWrapper title="Home">
       <div className="mt-5 mb-5">
-        <button
-          type="button"
-          className="p-4 bg-gray-400 w-full center rounded-md font-bold text-gray-700"
-        >
-          Add location
-        </button>
+        <SecBtn>Add location</SecBtn>
       </div>
       <Section title="Current Trip" subtitle={`${data.length} places`}>
-        <div className="w-1/2 ">
-          <div className="flex flex-col w-full">
+        <div className=" flex">
+          <div className="flex flex-col w-3/4">
             {data.map((d) => (
               <Trip data={d} />
             ))}
@@ -40,7 +36,9 @@ const Home = () => {
               View trip
             </Link>
           </div>
-          <div className="w-1/2 "></div>
+          <div className="w-1/4 flex flex-col">
+            <SecBtn>Export trip to CSV</SecBtn>
+          </div>
         </div>
       </Section>
 

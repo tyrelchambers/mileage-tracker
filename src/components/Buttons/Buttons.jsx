@@ -8,3 +8,14 @@ export const MainBtn = ({ children }) => {
     </button>
   );
 };
+
+export const SecBtn = ({ children }) => {
+  return (
+    <button
+      type="button"
+      className="ml-2 mr-2 p-4 bg-gray-400 w-full center rounded-md font-bold text-gray-700"
+    >
+      {children}
+    </button>
+  );
+};

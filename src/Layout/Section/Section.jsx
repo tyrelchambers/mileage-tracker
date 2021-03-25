@@ -8,7 +8,7 @@ const Section = ({ title, subtitle, children }) => {
         <H3>{title}</H3>
         <p className="text-sm ml-6 italic text-gray-700">{subtitle}</p>
       </div>
-      <hr className="hr mt-2" />
+      <hr className="hr mt-2 mb-4" />
 
       {children}
     </div>
